@@ -1,12 +1,41 @@
-<!DOCTYPE html>
-<html lang="es">
-    <head>
-        <meta charset="UTF-8">
-        <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
-        <link rel="stylesheet" href="searchbox_style.css">
-        <title>TEST</title>
-    </head>
-    <body>
-        <a>DZIAŁA!</a>>
-    </body>
-</html>
+{% extends 'base.html' %}
+{% load static %}
+
+{% block banner %}
+
+  <div id="index-banner">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <h4 class="header orange-text">Search results for:</h4>
+        <h5 class="header black-text">{{ query }}</h5>
+      </div>
+    </div>
+  </div>
+
+{% endblock %}
+
+{% block content %}
+
+      <!--   Movie section   -->
+      <div class="row">
+
+        {% for movie in movie_data.Search %}
+          <div class="col s12 m3">
+            <div class="card">
+              <div class="card-image">
+                <img src="{{ movie.Poster }}">
+              </div>
+              <div class="card-content">
+                <span class="card-title"><b>{{ movie.Title }}</b></span>   
+                <p>This is movie about something. This is movie about something. This is movie about something.</p>
+                <br><br>
+                <span class="right"><i class="material-icons right">date_range</i>{{ movie.Year }}</span>
+                <br><br>
+              </div>
+            </div>
+          </div>
+        {% endfor %}
+
+      </div>
+
+  {% endblock %}
