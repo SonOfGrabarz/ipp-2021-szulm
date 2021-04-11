@@ -10,18 +10,32 @@
         <h1 class="header center teal-text text-lighten-2"></h1>
 
         <!-- WYSZUKIWARKA FILMU -->
-        <div class="row">
-          <form class="col s3">
-            <div class="row">
-              <div class="input-field col s12">
-                <textarea type="submit" id="textarea1" name="q" value="{{ request.GET.q }}" class="materialize-textarea white-text" ></textarea>
-                <label for="textarea1">FIND YOUR MOVIE HERE:</label>
-              </div>
-              <button type="submit" name="action" class="waves-effect waves-teal btn"><i class="material-icons left">search</i>SEARCH</button>
-            </div>
-          </form>
-        </div>
 
+        <div class="row"></div>
+        <div class="row"></div>
+        <div class="row"></div>
+        <div class="row"></div>
+        <div class="row"></div>
+        <div class="row"></div>
+        <div class="row"></div>
+        <div class="row"></div>
+        <div class="row"></div>
+        <div class="row"></div>
+        <div class="row"></div>
+        <div class="row"></div>
+
+        <nav>
+          <div class="nav-wrapper">
+            <form>
+              <div class="input-field">
+                <input id="search" name="q" value="{{ request.GET.q }}" placeholder="Type your movie here..." type="search" required >
+                <label class="label-icon" for="search"><i class="material-icons">search</i></label>
+                <i class="material-icons">close</i>
+              </div>
+            </form>
+          </div>
+        </nav>
+        
         
         <!-- WYSZUKIWARKA FILMU -->
 

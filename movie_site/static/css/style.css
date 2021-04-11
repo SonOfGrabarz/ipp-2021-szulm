@@ -20,26 +20,6 @@ nav {
   line-height: 70px;
 }
 
-.btn, .btn-large, .btn-small{
-  color: #fff;
-  background-color: #53354a;
-}
-
-.waves-effect.waves-teal .waves-ripple {
-  /* The alpha value allows the text and background color
-  of the button to still show through. */
-   background-color: rgba(83, 53, 74, 1);
- }
-
-.btn:hover, .btn-large:hover, .btn-small:hover {
-  background-color: #2b2e4a;
-}
-
-.btn:focus, .btn-large:focus, .btn-small:focus,
-.btn-floating:focus {
-  background-color: #2b2e4a;
-}
-
 p {
   line-height: 2rem;
 }
@@ -54,9 +34,20 @@ p {
   height: auto;
   color: rgba(255,255,255,.9);
 }
-  .parallax-container .section {
-    width: 100%;
-  }
+
+.parallax-container .section {
+  width: 100%;
+}
+
+footer.page-footer {
+  margin: 0;
+}
+
+.page-footer {
+  padding-top: 20px;
+  color: #fff;
+  background-color: #e84545;
+}
 
 @media only screen and (max-width : 992px) {
   .parallax-container .section {
@@ -80,9 +71,3 @@ p {
 .icon-block .material-icons {
   font-size: inherit;
 }
-
-footer.page-footer {
-  margin: 0;
-}
-
-
