@@ -1,5 +1,6 @@
 # ipp-2021-szulm
 
+
 ## Indywidualny Projekt Programistyczny - sem IV - Szul Michal
 
 Celem projektu jest stworzenie strony internetowej podobnej do IMDB / filmwebu, katalogującej filmy oraz pozwalającej użytkownikowi na założenie konta oraz ocenianie filmów.
@@ -7,6 +8,7 @@ Technologie jakich planuję użyć w projekcie to Python (biblioteka Django) do 
 
 - Materialize: https://materializecss.com
 - OMDBapi: http://www.omdbapi.com
+
 
 ## Changelog
 
