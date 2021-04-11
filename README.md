@@ -7,11 +7,11 @@ Celem projektu jest stworzenie strony internetowej podobnej do IMDB / filmwebu, 
 Technologie jakich planuję użyć w projekcie to Python (biblioteka Django) do backendu, języków webowych oraz frameworku Materialize do frontendu.
 
 - Materialize: https://materializecss.com
-- OMDBapi: http://www.omdbapi.com
+- omdbApi: http://www.omdbapi.com
 
 
 ## Changelog
 
 ### 11-04-2021
 
-- działająca wyszukiwarka filmów z bazy danych OMDB
+- działająca wyszukiwarka filmów z bazy danych omdb
