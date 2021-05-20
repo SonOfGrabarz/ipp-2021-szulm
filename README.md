@@ -4,24 +4,13 @@
 ## Indywidualny Projekt Programistyczny - sem IV - Szul Michal
 
 Celem projektu jest stworzenie strony internetowej podobnej do IMDB / filmwebu, katalogującej filmy oraz pozwalającej użytkownikowi na założenie konta oraz ocenianie filmów.
-Technologie jakich planuję użyć w projekcie to Python (biblioteka Django) do backendu, języków webowych oraz frameworku Materialize do frontendu.
+Technologie jakich planuję użyć w projekcie to Python (biblioteka Django) do backendu, języków webowych oraz frameworku Bootstrap do frontendu.
 
-- Materialize: https://materializecss.com
+- Bootstrap: https://getbootstrap.com
 - omdbApi: http://www.omdbapi.com
 
 
-## Changelog
-
-### 11-04-2021
-
-- działająca wyszukiwarka filmów z bazy danych omdb
-
-### 20-05-2021
-
-- nowy design strony (w tym kierunku będzie tworzona)
-- poprawiona wyszukiwarka
-- sporo backendu
-- dodane karty szczegółów filmu
+## Postęp prac
 
 | Data | Postęp prac |
 | :---:| --- |
