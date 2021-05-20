@@ -15,3 +15,10 @@ Technologie jakich planuję użyć w projekcie to Python (biblioteka Django) do 
 ### 11-04-2021
 
 - działająca wyszukiwarka filmów z bazy danych omdb
+
+### 20-05-2021
+
+- nowy design strony (w tym kierunku będzie tworzona)
+- poprawiona wyszukiwarka
+- sporo backendu
+- dodane karty szczegółów filmu
