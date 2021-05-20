@@ -22,3 +22,10 @@ Technologie jakich planuję użyć w projekcie to Python (biblioteka Django) do 
 - poprawiona wyszukiwarka
 - sporo backendu
 - dodane karty szczegółów filmu
+
+Data | Postęp prac
+------------ | -------------
+kwiecień | [x] 
+maj | [x] 
+czerwiec | [ ] 
+
