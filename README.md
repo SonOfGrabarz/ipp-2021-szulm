@@ -26,8 +26,8 @@ Technologie jakich planuję użyć w projekcie to Python (biblioteka Django) do 
 Data | Postęp prac
 ------------ | -------------
 kwiecień | [x] Szablon strony
-         | [x] Integracja z bazą danych omDB
-         | [x] Wyszukiwarka filmów
+kwiecień | [x] Integracja z bazą danych omDB
+kwiecień | [x] Wyszukiwarka filmów
 maj | [x] 
 czerwiec | [ ] 
 
