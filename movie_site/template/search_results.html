@@ -22,6 +22,7 @@
 <div class="row">
 
   {% for movie in movie_data.Search %}
+<<<<<<< HEAD
     
     <div class="col-sm-4 mb-5 align-bottom">
       <div class="shadow card text-white bg-dark mb-3" style="width: 18rem;">
@@ -40,14 +41,74 @@
 </div>
 </div>
 
+=======
+
+    <!-- Movie Card Start -->
+    {% comment %} <div class="card-view">
+        <div class="card-header">
+          <a href="{% url 'movie-details' movie.imdbID%}"><img src="{{ movie.Poster }}"></a>
+        </div>
+
+        <div class="card-movie-content">
+            <div class="card-movie-content-head">
+                <a href="{% url 'movie-details' movie.imdbID%}">
+                    <div><h3 class="card-movie-title">{{ movie.Title }}</h3></div>
+                </a>
+                <div class="ratings"><span>8.8</span>/10</div>
+            </div>
+            <div class="card-movie-info">
+                <div class="movie-running-time">
+                    <label>Type</label>
+                    <span>{{ movie.Type }}</span>
+                </div>
+                <div class="movie-running-time">
+                    <label>Year</label>
+                    <span>{{ movie.Year }}</span>
+                </div>
+            </div>
+        </div>
+    </div> {% endcomment %}
+    
+      <div class="col-sm-4 mb-5 align-bottom">
+        <div class="shadow card text-white bg-dark mb-3" style="width: 18rem;">
+          <a href="{% url 'movie-details' movie.imdbID%}"><img class="card-img-top shadow" src="{{ movie.Poster }}" alt="Card image cap"></a>
+          <div class="card-body">
+            <h5 class="card-title">{{ movie.Title }}</h5>
+            <br>
+            <span><i class="fas fa-video"></i>  {{ movie.Type }}</span>
+            <span class="float-right"><i class="fas fa-calendar-alt"></i>  {{ movie.Year }}</span>
+          </div>
+        </div>
+      </div>
+
+    <!-- Movie Card End -->
+
+  {% endfor %}
+  </div>
+  </div>
+
+>>>>>>> 8ecbba4a0c598619efb00751587a22fc5fccecb3
   <div class="row">
       <div class="col"></div>
       <div class="col">
           <div class="float-left"><a class="btn btn-outline-dark my-2 my-sm-0" href="{% url 'pagination' query page_number %}">Next</a></div>
       </div>
   </div>
+<<<<<<< HEAD
 
 <br><br>
 
 {% endblock %}
 
+=======
+</div>
+
+<br><br>
+
+
+  {% endblock %}
+
+    </div>
+
+  </main>
+>>>>>>> 8ecbba4a0c598619efb00751587a22fc5fccecb3
