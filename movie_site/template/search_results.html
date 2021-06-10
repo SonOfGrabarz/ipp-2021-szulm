@@ -3,39 +3,83 @@
 
 {% block banner %}
 
-  <div id="index-banner">
-    <div class="section no-pad-bot">
-      <div class="container">
-        <h4 class="header orange-text">Search results for:</h4>
-        <h5 class="header black-text">{{ query }}</h5>
-      </div>
-    </div>
+<br><br>
+<br><br>
+
+<div class="container">
+  <div class="row">
+    <h3>Search results for: {{ query }}</h3>
   </div>
+</div>
+
+<br><br>
 
 {% endblock %}
 
 {% block content %}
 
-      <!--   Movie section   -->
-      <div class="row">
+<div class="container">
+<div class="row">
 
-        {% for movie in movie_data.Search %}
-          <div class="col s12 m3">
-            <div class="card">
-              <div class="card-image">
-                <img src="{{ movie.Poster }}">
-              </div>
-              <div class="card-content">
-                <span class="card-title"><b>{{ movie.Title }}</b></span>   
-                <p>This is movie about something.</p>
-                <br><br>
-                <span class="right"><i class="material-icons right">date_range</i>{{ movie.Year }}</span>
-                <br><br>
-              </div>
+  {% for movie in movie_data.Search %}
+
+    <!-- Movie Card Start -->
+    {% comment %} <div class="card-view">
+        <div class="card-header">
+          <a href="{% url 'movie-details' movie.imdbID%}"><img src="{{ movie.Poster }}"></a>
+        </div>
+
+        <div class="card-movie-content">
+            <div class="card-movie-content-head">
+                <a href="{% url 'movie-details' movie.imdbID%}">
+                    <div><h3 class="card-movie-title">{{ movie.Title }}</h3></div>
+                </a>
+                <div class="ratings"><span>8.8</span>/10</div>
             </div>
+            <div class="card-movie-info">
+                <div class="movie-running-time">
+                    <label>Type</label>
+                    <span>{{ movie.Type }}</span>
+                </div>
+                <div class="movie-running-time">
+                    <label>Year</label>
+                    <span>{{ movie.Year }}</span>
+                </div>
+            </div>
+        </div>
+    </div> {% endcomment %}
+    
+      <div class="col-sm-4 mb-5 align-bottom">
+        <div class="shadow card text-white bg-dark mb-3" style="width: 18rem;">
+          <a href="{% url 'movie-details' movie.imdbID%}"><img class="card-img-top shadow" src="{{ movie.Poster }}" alt="Card image cap"></a>
+          <div class="card-body">
+            <h5 class="card-title">{{ movie.Title }}</h5>
+            <br>
+            <span><i class="fas fa-video"></i>  {{ movie.Type }}</span>
+            <span class="float-right"><i class="fas fa-calendar-alt"></i>  {{ movie.Year }}</span>
           </div>
-        {% endfor %}
-
+        </div>
       </div>
 
+    <!-- Movie Card End -->
+
+  {% endfor %}
+  </div>
+  </div>
+
+  <div class="row">
+      <div class="col"></div>
+      <div class="col">
+          <div class="float-left"><a class="btn btn-outline-dark my-2 my-sm-0" href="{% url 'pagination' query page_number %}">Next</a></div>
+      </div>
+  </div>
+</div>
+
+<br><br>
+
+
   {% endblock %}
+
+    </div>
+
+  </main>
